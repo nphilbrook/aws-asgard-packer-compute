@@ -35,7 +35,6 @@ deployment "dev" {
     project_name         = "asgard"
     num_packer_instances = 1
   }
-  destroy = true
 }
 
 publish_output "dev_packer_public_dns" {
@@ -57,7 +56,6 @@ deployment "qa1" {
     default_tags       = local.default_tags
     project_name       = "asgard"
   }
-  destroy = true
 }
 
 
@@ -72,7 +70,6 @@ deployment "sit" {
     default_tags       = local.default_tags
     project_name       = "asgard"
   }
-  destroy = true
 }
 
 deployment "prod" {
@@ -87,7 +84,6 @@ deployment "prod" {
     project_name         = "asgard"
     num_packer_instances = 2
   }
-  destroy = true
 }
 
 publish_output "prod_packer_public_dns" {
