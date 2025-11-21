@@ -42,7 +42,7 @@ variable "num_packer_instances" {
 variable "source_ip_cidrs" {
   type        = list(string)
   description = "A list of IPv4 CIDRs that will allow SSH ingress to the packer hosts as well as HTTP and HTTPS ingress to the demo web hosts."
-  default     = ["163.252.128.75/32"]
+  default     = ["71.168.85.118/32"]
 }
 
 variable "project_name" {
