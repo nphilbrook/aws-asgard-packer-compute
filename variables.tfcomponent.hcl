@@ -36,7 +36,7 @@ variable "packer_channel" {
 variable "num_packer_instances" {
   type        = number
   description = "The number of Packer build instances to launch. If greater than the number of subnets, the number of subnets will be used."
-  default     = 1
+  default     = 0
 }
 
 variable "source_ip_cidrs" {
