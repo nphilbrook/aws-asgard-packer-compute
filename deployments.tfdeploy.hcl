@@ -33,7 +33,7 @@ deployment "dev" {
     packer_channel       = "dev"
     default_tags         = local.default_tags
     project_name         = "asgard"
-    num_packer_instances = 1
+    num_packer_instances = 0
   }
 }
 
@@ -82,7 +82,7 @@ deployment "prod" {
     packer_channel       = "prod"
     default_tags         = local.default_tags
     project_name         = "asgard"
-    num_packer_instances = 1
+    num_packer_instances = 0
   }
 }
 
